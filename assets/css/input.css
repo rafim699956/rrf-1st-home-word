@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme{
+    --default-font-family:"Montserrat", sans-serif;
+    --xl-container-width:70.125rem;
+    --container-x-padding:2.25rem;
+    --heading-text-color:#252B42;
+    --text-color:#737373;
+    --body-font-size:0.875rem;
+    --body-font-weight:500;
+    --body-line-height:1.25rem;
+    --body-letter-spacing:0.013rem;
+    --box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+@utility container{
+    margin:0 auto;
+    padding:0 var(--container-x-padding);
+    @variant xl {
+        width: var(--xl-container-width);
+    }
+}
+body{
+    color: var(--text-color);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    letter-spacing: var(--body-letter-spacing);
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    color: var(--heading-text-color);
+    font-weight: 700;
+}
+.h2,h2{
+    font-size: 2.5rem;
+    line-height: 3.563rem;
+}
+.h6,h6{
+    font-size: 2.5rem;
+    line-height: 3.563rem;
+}
+.box-shadow{
+    box-shadow: var(--box-shadow);
+}
